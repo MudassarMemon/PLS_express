@@ -1,11 +1,14 @@
 const express = require("express");
+var path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+
 const debug = require('debug');
 const cors = require('cors');
 const csurf = require('csurf');
 const { isProduction } = require('./config/keys');
 
+const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/api/users');
 const csrfRouter = require('./routes/api/csrf');
 
@@ -15,6 +18,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Security Middleware
 if (!isProduction) {
@@ -37,6 +41,7 @@ app.use(
 );
 
 // Attach Express routers
+app.use('/', indexRouter);
 app.use('/api/users', usersRouter);
 app.use('/api/csrf', csrfRouter);
 
