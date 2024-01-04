@@ -12,14 +12,11 @@ const dbLogger = debug('backend:mongodb');
 
 var http = require('http');
 
-const mongoose = require('mongoose');
-const {mongoURI: db} = require('../config/keys.js')
-
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '5001');
+var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
 /**
@@ -32,13 +29,7 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-mongoose.connect(db, { useNewUrlParser: true })
-.then(() => {
-  dbLogger("Connected to MongoDB successfully");
-  server.listen(port);
-})
-.catch(err => serverLogger(err));
-
+server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
 

@@ -9,8 +9,7 @@ const csurf = require('csurf');
 const { isProduction } = require('./config/keys');
 
 const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/api/users');
-const csrfRouter = require('./routes/api/csrf');
+
 
 const app = express();
 
@@ -42,8 +41,7 @@ app.use(
 
 // Attach Express routers
 app.use('/', indexRouter);
-app.use('/api/users', usersRouter);
-app.use('/api/csrf', csrfRouter);
+
 
 // Express custom middleware for catching all unmatched requests and formatting
 // a 404 error to be sent as the response.
