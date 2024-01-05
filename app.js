@@ -4,9 +4,9 @@ var path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const debug = require('debug');
-const subscribeRouter = require('./subscribe'); // Import the subscribe router
-const contactRouter = require('./contact') // Import the contact router
-const appointmentRouter = require('./appointment') // Import the appointment router
+const subscribeRouter = require('./routes/forms/subscribe'); // Import the subscribe router
+const contactRouter = require('./routes/forms/contact') // Import the contact router
+const appointmentRouter = require('./routes/forms/appointment') // Import the appointment router
 const indexRouter = require('./routes/index');
 const nodemailer = require('nodemailer');
 
