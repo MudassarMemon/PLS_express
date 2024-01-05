@@ -6,6 +6,7 @@ const logger = require('morgan');
 const debug = require('debug');
 const subscribeRouter = require('./subscribe'); // Import the subscribe router
 const contactRouter = require('./contact') // Import the contact router
+const appointmentRouter = require('./appointment') // Import the appointment router
 const indexRouter = require('./routes/index');
 const nodemailer = require('nodemailer');
 
@@ -22,6 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/subscribe', subscribeRouter);
 app.use('/contact', contactRouter);
+app.use('/appointment', appointmentRouter);
 
 
 // Express custom middleware for catching all unmatched requests and formatting

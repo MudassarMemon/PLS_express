@@ -253,12 +253,7 @@
 
             <!-- APPOINTMENT-->
             <section class="section p-b-100">
-                <form id="two-step-form" method="post" action="https://formsubmit.co">
-                    <!-- Honeypot -->
-					<input type="text" name="_honey" style="display: none;">
-
-                    <!-- Captcha -->
-                    <input type="hidden" name="_captcha" value="false">
+                <form id="two-step-form" method="post">
 
                     <div class="container">
                             <div class="form-step-one">
@@ -281,7 +276,7 @@
                                     <div class="col-sm-12 col-md-6">
                                         <div class="row flex-nowrap">
                                             <div class="col-sm-1 p-r-0" id="free-assessment-div">
-                                                <input type="checkbox" id="free-assessment" name="free-assessment">
+                                                <input type="checkbox" id="free-assessment" name="freeAssessment">
                                             </div>
                                             <div class="col-sm-11" id="free-assessment-text">
                                                 <label for="free-assessment">Not sure. I would like a free assessment</label>
@@ -344,13 +339,13 @@
                                 <div class="col-sm-12 col-md-6">
                                     <div class="row p-t-10">
                                         <div class="col-sm-12 col-md-6" id="postal-code-mobile">
-                                            <input class="au-input" type="text" name="fname" placeholder="Postal Code" required="required">
+                                            <input class="au-input" type="text" name="mobilePostal" placeholder="Postal Code">
                                         </div>
-                                        <div class="col-sm-1 p-r-0" id="free-assessment-div">
-                                            <input type="checkbox" id="free-assessment" name="free-assessment">
+                                        <div class="col-sm-1 p-r-0" id="enable-sms-div">
+                                            <input type="checkbox" id="enable-sms" name="enableSms">
                                         </div>
                                         <div class="col-sm-11" id="opt-text">
-                                            <label for="free-assessment">Send Text Messages</label>
+                                            <label for="enableSms">Send Text Messages</label>
                                         </div>
                                     </div>
                                 </div>
@@ -359,7 +354,7 @@
 
                             <div class="row">
                                 <div class="col-sm-12 col-md-6" id="postal-code">
-                                    <input class="au-input" type="text" name="fname" placeholder="Postal Code" required="required">
+                                    <input class="au-input" type="text" name="postal" placeholder="Postal Code">
                                 </div>
                                 <div class="col-sm-12 col-md-6 p-t-10">
                                     <select class="appt rounded" id="reference" name="reference">    
@@ -550,7 +545,7 @@
     <script src="js/config-contact.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZpvUGmm_OZAW0utJ5uiP79_LLWQPRXsA"></script>
     <script src="js/theme-map.js"></script>
-    <script src="js/appointment.js"></script>
+    <script src="js/config-appointment.js"></script>
     <script src="js/config-subscribe.js"></script>
 
 
