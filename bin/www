@@ -5,11 +5,8 @@
  */
 
 var app = require('../app');
-
 const debug = require('debug');
 const serverLogger = debug('backend:server');
-const dbLogger = debug('backend:mongodb');
-
 var http = require('http');
 
 /**

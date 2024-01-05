@@ -5108,7 +5108,6 @@ button {
   padding: 75px 0;
   padding-bottom: 95px;
   background-color: black;
-  background-image: url("../images/bg-footer-01.jpg");
   border: none;
   border-top: 2px solid #262D33;
 }
@@ -16615,7 +16614,6 @@ button:focus {
    /* ==========================================================================
    #Interactive Diagrams Heating and Cooling
    ========================================================================== */
-
   div#cassette-heating{
     position: relative;
      top: 44%;
@@ -16625,7 +16623,6 @@ button:focus {
      z-index: 2;
      margin:0px;
      padding:0px;
-     border:1px solid red;
   }
   
   div#duct-air-handler-heating{
@@ -16637,7 +16634,6 @@ button:focus {
      z-index: 2;
      margin:0px;
      padding:0px;
-     border:1px solid red;
   }
   
   div#wall-mounted-heating{
@@ -16649,7 +16645,6 @@ button:focus {
      z-index: 2;
      margin:0px;
      padding:0px;
-     border:1px solid red;
   }
   
   div#floor-mounted-heating{
@@ -16661,7 +16656,6 @@ button:focus {
      z-index: 2;
      margin:0px;
      padding:0px;
-     border:1px solid red;
   }
   
   div#multi-zone-heating{
@@ -16673,7 +16667,6 @@ button:focus {
      z-index: 2;
      margin:0px;
      padding:0px;
-     border:1px solid red;
   }
   
   div#horizontal-ducted-heating{
@@ -16685,7 +16678,6 @@ button:focus {
      z-index: 2;
      margin:0px;
      padding:0px;
-     border:1px solid red;
   }
 
   div#cassette-cooling{

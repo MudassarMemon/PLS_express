@@ -1,12 +1,12 @@
+require('dotenv').config();
 const express = require("express");
 var path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-
 const debug = require('debug');
-const cors = require('cors');
-const csurf = require('csurf');
-const { isProduction } = require('./config/keys');
+const subscribeRouter = require('./subscribe'); // Import the router
+const nodemailer = require('nodemailer');
+
 
 const indexRouter = require('./routes/index');
 
@@ -15,32 +15,13 @@ const app = express();
 
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Security Middleware
-if (!isProduction) {
-  // Enable CORS only in development because React will be on the React
-  // development server (http://localhost:3000). (In production, React files
-  // will be served statically on the Express server.)
-  app.use(cors());
-}
-
-// Set the _csrf token and create req.csrfToken method to generate a hashed
-// CSRF token
-app.use(
-  csurf({
-    cookie: {
-      secure: isProduction,
-      sameSite: isProduction && "Lax",
-      httpOnly: true
-    }
-  })
-);
-
 // Attach Express routers
 app.use('/', indexRouter);
+app.use('/subscribe', subscribeRouter);
 
 
 // Express custom middleware for catching all unmatched requests and formatting
