@@ -20,8 +20,16 @@ router.post('/', async (req, res) => {
         text: `Name: ${name}, Email: ${email}, Phone: ${phone}, Message: ${message}` // plain text body
     };
 
+    let emailConfirmation = {
+        from: process.env.EMAIL, // sender address
+        to: email, // list of receivers
+        subject: 'Thanks for reaching out.', // Subject line
+        text: `We will be in touch shortly.` // plain text body
+    };
+
     try {
         let info = await transporter.sendMail(mailOptions);
+        let confirm = await transporter.sendMail(emailConfirmation);
         console.log('Message sent: %s', info.messageId);
         // res.redirect('/success-page');
     } catch (error) {

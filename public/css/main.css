@@ -5171,7 +5171,20 @@ button {
   background-image: linear-gradient(to right, #00D1FF 0%, #00D1FF 51%, #F7B278 100%);
 }
 
+#send-message {
+  background-color: #00D1FF;
+  color: black;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  height: auto;
+}
 
+#send-message:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, #00D1FF 0%, #00D1FF 51%, #F7B278 100%);
+}
 @media (max-width: 991px) {
   .footer.bg-parallax {
     background-position: center center;
