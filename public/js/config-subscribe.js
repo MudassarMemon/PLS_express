@@ -1,7 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
+    let subscribeButton = document.querySelector('#subscribe-btn')
+
     document.querySelector('.js-subcribe-form').addEventListener('submit', function(e) {
     e.preventDefault();
     let formData = new FormData(this);
+    subscribeButton.innerHTML = "Subscribed!"
 
     fetch('/subscribe', {
         method: 'POST',

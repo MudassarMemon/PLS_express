@@ -23,10 +23,10 @@ router.post('/', async (req, res) => {
     try {
         let info = await transporter.sendMail(mailOptions);
         console.log('Message sent: %s', info.messageId);
-        res.redirect('/success-page');
+        // res.redirect('/success-page');
     } catch (error) {
         console.error(error);
-        res.redirect('/error-page');
+        // res.redirect('/error-page');
     }
 });
 
