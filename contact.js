@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer');
 const router = express.Router();
 
 router.post('/', async (req, res) => {
-    let { firstName, lastName, email } = req.body;
+    let { name, email, phone, message } = req.body;
     // Set up Nodemailer transport
     let transporter = nodemailer.createTransport({
         service: 'gmail', // or your email service
@@ -16,8 +16,8 @@ router.post('/', async (req, res) => {
     let mailOptions = {
         from: process.env.EMAIL, // sender address
         to: 'mudassar95memon@gmail.com', // list of receivers
-        subject: 'New Subscription', // Subject line
-        text: `New subscriber: ${firstName} ${lastName}, Email: ${email}` // plain text body
+        subject: 'Contact Form', // Subject line
+        text: `Name: ${name}, Email: ${email}, Phone: ${phone}, Message: ${message}` // plain text body
     };
 
     try {

@@ -4,11 +4,10 @@ var path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const debug = require('debug');
-const subscribeRouter = require('./subscribe'); // Import the router
-const nodemailer = require('nodemailer');
-
-
+const subscribeRouter = require('./subscribe'); // Import the subscribe router
+const contactRouter = require('./contact') // Import the contact router
 const indexRouter = require('./routes/index');
+const nodemailer = require('nodemailer');
 
 
 const app = express();
@@ -22,6 +21,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Attach Express routers
 app.use('/', indexRouter);
 app.use('/subscribe', subscribeRouter);
+app.use('/contact', contactRouter);
 
 
 // Express custom middleware for catching all unmatched requests and formatting

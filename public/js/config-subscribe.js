@@ -5,10 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     fetch('/subscribe', {
         method: 'POST',
-        headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        body: new URLSearchParams(formData).toString()
+        // headers: {
+        // 'Content-Type': 'application/x-www-form-urlencoded'
+        // },
+        // body: new URLSearchParams(formData).toString()
+        body: formData
     })
     .then(response => {
         if (response.ok) {
