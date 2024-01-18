@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    let subscribeButton = document.querySelector('#subscribe-btn')
+    let subscribeButton = document.querySelector('#send-message')
 
     document.querySelector('.js-contact-form').addEventListener('submit', function(e) {
     e.preventDefault();

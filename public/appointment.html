@@ -234,7 +234,7 @@
 
             <!-- PAGE HEADING-->
             <section class="section p-t-150">
-                <div class="container">
+                <div class="container make-appointment">
                     <div class="page-heading p-b-90">
                         <h2 class="title-2 text-center">MAKE AN APPOINTMENT</h2>
                     </div>
@@ -247,6 +247,14 @@
                             <h5 class="appt-step-2 p-t-20" >2. Contact Information</h5>
                         </div>
                     </div>
+                </div>
+                <div class="container confirmation-message" id="confirmation-message" style="display: none;">
+                    <div class="page-heading p-b-90">
+                        <h2 class="title-2 text-center appointment-confirmation">APPOINTMENT REQUEST SENT</h2>
+                    </div>
+                    <h3 class="text-center">Thank you for scheduling your appointment!</h3>
+                    <br>
+                    <h3 class="text-center">You’ll receive a confirmation email shortly.</h3>
                 </div>
             </section>
             <!-- END PAGE HEADING-->
@@ -267,9 +275,23 @@
                                     <div class="col-sm-12 col-md-6">
                                         <select class="appt rounded" id="service" name="service">    
                                             <option value="">Which service do you need?</option>
-                                            <option value="Repair">Repair</option>
-                                            <option value="Maintenance">Maintenance</option>
-                                            <option value="Installation">Installation</option>
+                                            <option value="Furnace Repair">Furnace Repair</option>
+                                            <option value="Duct Repair/Reroute">Duct Repair/Reroute</option>
+                                            <option value="Heating Tune Up">Heating Tune Up</option>
+                                            <option value="Furnace Service">Furnace Service</option>
+                                            <option value="Thermostat Service">Thermostat Service</option>
+                                            <option value="Heating Inspection">Heating Inspection</option>
+                                            <option value="Compressor Repair">Compressor Repair</option>
+                                            <option value="AC Repair/Cleaning">AC Repair/Cleaning</option>
+                                            <option value="Cooling Inspection">Cooling Inspection</option>
+                                            <option value="Cooling Tune Up">Cooling Tune Up</option>
+                                            <option value="Filter Replacement">Filter Replacement</option>
+                                            <option value="Coil & Duct Sanitization">Coil & Duct Sanitization</option>
+                                            <option value="Heat Distribution Systems">Heat Distribution Systems</option>
+                                            <option value="Electric Resistance Heating">Electric Resistance Heating</option>
+                                            <option value="Furnaces and Boilers">Furnaces and Boilers</option>
+                                            <option value="Central Air Conditioning">Central Air Conditioning</option>
+                                            <option value="Ventilation Systems for Cooling">Ventilation Systems for Cooling</option>
                                         </select>
                                     </div>
 
@@ -359,9 +381,13 @@
                                 <div class="col-sm-12 col-md-6 p-t-10">
                                     <select class="appt rounded" id="reference" name="reference">    
                                         <option value="">How did you hear about us?</option>
-                                        <option value="repair">Repair</option>
-                                        <option value="maintenance">Maintenance</option>
-                                        <option value="installation">Installation</option>
+                                        <option value="google">Google</option>
+                                        <option value="social-media">Social Media</option>
+                                        <option value="advertisement">Advertisement</option>
+                                        <option value="referral">Referral</option>
+                                        <option value="online-review">Online Review</option>
+                                        <option value="local-event">Local Event</option>
+                                        <option value="other">Other</option>
                                     </select>
                                 </div>
                             </div>

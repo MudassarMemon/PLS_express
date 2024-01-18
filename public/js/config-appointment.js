@@ -62,5 +62,9 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         })
         .catch(error => console.error('Error:', error));
+
+        document.querySelector('.make-appointment').style.display = 'none';
+        document.querySelector('.form-step-two').style.display = 'none';
+        document.querySelector('.confirmation-message').style.display = 'block';
     });
 });

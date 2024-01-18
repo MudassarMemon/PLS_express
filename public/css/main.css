@@ -16541,7 +16541,7 @@ button:focus {
   }
 
   main.tos {
-    background-color: black;
+    background-color: black;    
   }
 
   .black-default-bg {
@@ -16782,13 +16782,15 @@ button:focus {
   font-style: normal;
 }
 
-.pp-scrollable{
-  background-image: url('../images/arch-pipe.png');
-  background-repeat: no-repeat;
-  background-position: 10%;
-}
-/* 
-.pp-scrollable{
+/* .pp-scrollable{
+  background-image: url('../images/illustrations/l-pipe.png'), url('../images/illustrations/arch-pipe.png'), url('../images/illustrations/snake-pipe.png');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position-x: 10%, 75%, 90%;
+  background-position-y: 10%, 20%, 75%;
+  background-attachment: local, local, local;
+} */
+
+/* .pp-scrollable{
   background-image: url('../images/arch-pipe.png'), url('../images/s-pipe.png'), url('../images/l-pipe.png'), url('../images/snake-pipe.png'), url('../images/house.png');
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: 10% 20%, 30% 40%, 50% 60%, 70% 80%, 90% 10%;
@@ -16959,6 +16961,11 @@ select.appt {
   text-indent: 15px;
   color: #94999e;
   display: none;
+}
+
+.appointment-confirmation{
+ padding-bottom: 30px;
+ border-bottom: 1px solid #00D1FF;
 }
 
 #postal-code-mobile{
