@@ -16,16 +16,16 @@ router.post('/', async (req, res) => {
     let mailOptions = {
         from: process.env.EMAIL, // sender address
         to: 'mudassar95memon@gmail.com', // list of receivers
-        subject: 'New Subscription', // Subject line
-        text: `New subscriber: ${firstName} ${lastName}, Email: ${email}` // plain text body
+        subject: `Subscription Request from ${firstName} ${lastName}`, // Subject line
+        text: `New subscriber: ${firstName} ${lastName}\nEmail: ${email}` // plain text body
     };
 
-    let emailConfirmation = {
-        from: process.env.EMAIL, // sender address
-        to: email, // list of receivers
-        subject: 'Welcome to our newletter', // Subject line
-        text: `You have successfully enrolled to our newsletter` // plain text body
-    };
+    // let emailConfirmation = {
+    //     from: process.env.EMAIL, // sender address
+    //     to: email, // list of receivers
+    //     subject: 'Welcome to our newsletter', // Subject line
+    //     text: `You have successfully enrolled to our newsletter` // plain text body
+    // };
 
     try {
         let info = await transporter.sendMail(mailOptions);

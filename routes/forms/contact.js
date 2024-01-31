@@ -16,16 +16,16 @@ router.post('/', async (req, res) => {
     let mailOptions = {
         from: process.env.EMAIL, // sender address
         to: 'mudassar95memon@gmail.com', // list of receivers
-        subject: 'Contact Form', // Subject line
-        text: `Name: ${name}, Email: ${email}, Phone: ${phone}, Message: ${message}` // plain text body
+        subject: `Inquiry from ${name}`, // Subject line
+        text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}` // plain text body
     };
 
-    let emailConfirmation = {
-        from: process.env.EMAIL, // sender address
-        to: email, // list of receivers
-        subject: 'Thanks for reaching out.', // Subject line
-        text: `We will be in touch shortly.` // plain text body
-    };
+    // let emailConfirmation = {
+    //     from: process.env.EMAIL, // sender address
+    //     to: email, // list of receivers
+    //     subject: 'Thanks for reaching out.', // Subject line
+    //     text: `We will be in touch shortly.` // plain text body
+    // };
 
     try {
         let info = await transporter.sendMail(mailOptions);
