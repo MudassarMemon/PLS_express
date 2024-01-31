@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Update service detail view
     serviceItems.forEach(function(item) {
-        item.addEventListener('click', function() {
+        item.addEventListener('click', function(e) {
             var title = this.getAttribute('data-title');
             var description = this.getAttribute('data-description');
             var imageUrl = this.getAttribute('data-image-url');
@@ -60,6 +60,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Show the service detail view
             document.querySelector('.service-detail').style.display = 'block';
+
+
+            var childElement = item.querySelector("img");
+        
+            // Check if the click is directly on the child element to avoid infinite loop
+            if (e.target !== childElement) {
+                // Create a new click event
+                var event = new MouseEvent('click', {
+                    bubbles: true,
+                    cancelable: true,
+                    view: window
+                });
+
+            // Dispatch the event on the child element
+            childElement.dispatchEvent(event);
+            }
         });
     });
 
