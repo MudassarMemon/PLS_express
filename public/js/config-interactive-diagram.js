@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
             if (currentState == "on") {
                 currentState = "off"
                 interactiveOverlay[2].style.backgroundImage = defaultBackground
-                console.log(defaultBackground)
                 
             } else {
                 currentState = "on"
