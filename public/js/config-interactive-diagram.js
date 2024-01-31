@@ -1,12 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
     //interactive heat diagram
 
-    var interactiveHover = document.querySelectorAll('.interactiveHover');
-    var interactiveOverlay = document.querySelectorAll('.defaultimg');
-    let defaultBackground = interactiveOverlay[2].getAttribute('style')
+    let interactiveHover = document.querySelectorAll('.interactiveHover');
+    let interactiveOverlay = document.querySelectorAll('.defaultimg');
+    let defaultBackground = interactiveOverlay[2].style.backgroundImage
+    let interactiveList = document.querySelector('.interactive-list'); 
+    let currentState = interactiveList.getAttribute('data-toggle');
 
     interactiveOverlay.forEach(function(area){
         area.addEventListener("click", function(){
+            currentState = "off"
             let overlay = this.getAttribute('id')
             interactiveOverlay[2].style.backgroundImage = "url(\"./images/" + overlay + ".jpg\")"
         })
@@ -14,8 +17,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     interactiveHover.forEach(function(area){
         area.addEventListener("click", function(){
-            let overlay = this.getAttribute('id')
-            interactiveOverlay[2].style.backgroundImage = "url(\"./images/" + overlay + ".jpg\")"
+            if (currentState == "on") {
+                currentState = "off"
+                interactiveOverlay[2].style.backgroundImage = defaultBackground
+                console.log(defaultBackground)
+                
+            } else {
+                currentState = "on"
+                let overlay = this.getAttribute('id')
+                interactiveOverlay[2].style.backgroundImage = "url(\"./images/" + overlay + ".jpg\")"
+            }
         })
 
         // area.addEventListener("mouseleave", function(){
