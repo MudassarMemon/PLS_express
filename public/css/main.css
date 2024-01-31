@@ -1274,6 +1274,10 @@ a:hover {
   transition: all 1s ease;
 }
 
+.blog .entry-excerpt{
+  color: rgb(188, 188, 188);
+}
+
 .blog .entry-title {
   margin-top: 30px;
   margin-bottom: 5px;
@@ -1281,17 +1285,17 @@ a:hover {
 
 .blog .entry-title a {
   font-size: 18px;
-  color: #222;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
 .blog .entry-title a:hover {
-  color: #666;
+  color: #ffffff;
 }
 
 .blog .entry-meta {
   font-size: 11px;
-  color: #888;
+  color: #b3b2b2;
   letter-spacing: 0.3em;
   display: inline-block;
 }
@@ -1393,12 +1397,12 @@ a:hover {
 }
 
 .media-project .media__body .title a:hover {
-  color: #ccc;
+  color: #ffffff;
 }
 
 .media-project .media__body .address {
   font-size: 11px;
-  color: #ececec;
+  color: #ffffff;
 }
 
 .media-project .line {
@@ -4907,7 +4911,7 @@ button {
 
 .blog-detail-1 .entry-title {
   font-size: 25px;
-  color: #222;
+  color: #fbfbfb;
   text-transform: uppercase;
   margin-bottom: 2px;
 }
@@ -4918,7 +4922,7 @@ button {
 
 .blog-detail-1 .entry-date {
   font-size: 11px;
-  color: #888;
+  color: #c9c7c7;
   letter-spacing: 0.3em;
 }
 
@@ -4936,11 +4940,11 @@ button {
 }
 
 .blog-detail-1 .entry-content blockquote {
-  background: #f8f8f8;
+  background: #000000;
   position: relative;
   text-align: center;
   font-size: 18px;
-  color: #222;
+  color: #e0dddd;
   font-weight: 700;
   padding: 50px 40px;
   margin-bottom: 30px;
@@ -6010,17 +6014,17 @@ button {
   line-height: 20px;
   padding: 0 12px;
   text-align: center;
-  color: #555;
+  color: #ffffff;
 }
 
 .page-number.current, .page-number:hover {
-  color: #222;
+  color: #ffffff;
   text-decoration: underline;
 }
 
 .page-number.next:hover, .page-number.prev:hover {
   text-decoration: none;
-  color: #666;
+  color: #ffffff;
 }
 
 /* ==========================================================================
