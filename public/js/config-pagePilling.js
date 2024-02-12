@@ -45,10 +45,6 @@
                     keyboardScrolling: true,
                     sectionSelector: '.section-pp',
                     animateAnchor: false,
-
-                    afterRender: function(){
-                        $('#pp-nav').addClass('pp-bullet');
-                    },
                     onLeave: function(index, nextIndex, direction){
 
                         /* CHANGE PAGE INFO */
