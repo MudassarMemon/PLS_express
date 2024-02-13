@@ -5528,7 +5528,7 @@ button {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  background: #111;
+  background: #11111100;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -moz-box-align: center;
@@ -5548,6 +5548,12 @@ button {
   transition: all 0.3s ease;
 }
 
+@media (max-width: 991px) {
+  .hamburger {
+    background: #111;
+  }
+  
+}
 .hamburger:hover {
   background: #111;
   border-color: transparent;
