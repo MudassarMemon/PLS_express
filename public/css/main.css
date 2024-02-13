@@ -16802,6 +16802,22 @@ button:focus {
      padding:0px;
   }
 
+/* Assume a tolerance that lets us target aspect ratios close to 16:9 */
+/* Hide the page for aspect ratios wider than 16:9 */
+  @media (min-aspect-ratio: 19/9) {
+    #interactive-diagram-toggle {
+      display: none;
+    }
+  }
+  
+  /* Hide the page for aspect ratios narrower than 16:9 */
+  @media (max-aspect-ratio: 14/9) {
+    #interactive-diagram-toggle {
+      display: none;
+    }
+  }
+
+
    /* ==========================================================================
    #Font
    ========================================================================== */
