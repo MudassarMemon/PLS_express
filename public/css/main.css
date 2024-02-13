@@ -1697,7 +1697,6 @@ a:hover {
 
 .media-project-3.right .media__content {
   padding-left: 0;
-  padding-right: 80px;
   text-align: right;
 }
 
@@ -1755,6 +1754,8 @@ a:hover {
 .media-project-3 .media__img {
   width: 685px;
   overflow: visible;
+  display: flex;
+  justify-content: center;
 }
 
 .media-project-3 .media__img > a {
@@ -1782,11 +1783,14 @@ a:hover {
 }
 
 .media-project-3 .media__img > img {
-  padding-left: 200px;
+  padding-left: auto;
+  padding-right: auto;
 }
 
 .media-project-3.right .media__img > img {
-  padding-left: 100px;
+  padding-left: auto;
+  padding-right: auto;
+
 }
 
 .media-project-3 .add,
@@ -1930,6 +1934,33 @@ a:hover {
   .media-project-3.right .year {
     left: 0;
     bottom: auto;
+  }
+  figure.media__img {
+    display: flex;
+    justify-content: center;
+  }
+  figure.media__img > img {
+    padding-left: 0px;
+    border: 1px solid red;
+  }
+  .media__content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    justify-items: center;
+  }
+
+  .media__body {
+    padding: 0% 5%;
+  }
+
+  .media__content * {
+    text-align: left;
+  }
+
+  .media__content > a{
+    align-self: center;
   }
 }
 
