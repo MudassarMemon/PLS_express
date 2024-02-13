@@ -16652,6 +16652,7 @@ button:focus {
     }
 
     .about-bg {
+      margin-top: 110px;
       height: 80%;
     } 
   }
