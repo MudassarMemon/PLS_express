@@ -1941,7 +1941,6 @@ a:hover {
   }
   figure.media__img > img {
     padding-left: 0px;
-    border: 1px solid red;
   }
   .media__content {
     display: flex;
@@ -16662,6 +16661,18 @@ button:focus {
     font-weight: 200;
   }
 
+  @media (max-width: 767px) {
+    .service-detail, .media-about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+    }
+    #schedule-btn {
+      justify-self: center;
+    }
+  }
+
   /* ==========================================================================
    #About Us
    ========================================================================== */
@@ -16847,7 +16858,6 @@ button:focus {
       display: none;
     }
   }
-
 
    /* ==========================================================================
    #Font
