@@ -679,7 +679,7 @@ a:hover {
 .list-social__item a {
   display: block;
   padding: 0 10px;
-  font-size: 13px;
+  font-size: 20px;
   color: #bcbcbc;
 }
 
@@ -5263,14 +5263,25 @@ button {
 }
 
 @media (max-width: 768px){
-  #subscribe-button-message{
-    padding: 5px 0 40px 0;
+  #subscribe-message {
+    text-align: center;
+  }
+  .subscribe-button-message {
+    justify-content: center;
   }
   #subscribe-btn {
     margin-bottom: 10px;
   }
   #subscribe-inputs {
     margin-bottom: 30px;
+  }
+
+  .subscribe-form{
+    justify-content: center;
+  }
+
+  .footer-col, .widget {
+    text-align: center;
   }
 }
 
@@ -5401,7 +5412,7 @@ button {
 }
 
 .header-2--dark .hamburger.hamburger--sm .hamburger-box .hamburger-inner, .header-2--dark .hamburger.hamburger--sm .hamburger-box .hamburger-inner:before, .header-2--dark .hamburger.hamburger--sm .hamburger-box .hamburger-inner:after {
-  background-color: #555;
+  background-color: #fff;
 }
 
 /* HEADER 5 */
@@ -5430,7 +5441,7 @@ button {
 }
 
 .header-page-pilling.light .hamburger.hamburger--sm .hamburger-box .hamburger-inner, .header-page-pilling.light .hamburger.hamburger--sm .hamburger-box .hamburger-inner:before, .header-page-pilling.light .hamburger.hamburger--sm .hamburger-box .hamburger-inner:after {
-  background-color: #555;
+  background-color: #ffffff;
 }
 
 /* HEADER MOBILE */
@@ -5474,7 +5485,7 @@ button {
 }
 
 .header-mobile--light .hamburger:hover .hamburger-box .hamburger-inner, .header-mobile--light .hamburger:hover .hamburger-box .hamburger-inner:after, .header-mobile--light .hamburger:hover .hamburger-box .hamburger-inner:before {
-  background: #222;
+  background: #fff;
 }
 
 .header-mobile--light .hamburger-inner, .header-mobile--light .hamburger-inner:after, .header-mobile--light .hamburger-inner:before {
@@ -5482,12 +5493,12 @@ button {
 }
 
 .hamburger {
-  border: 1px solid #888;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  background: #111;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -moz-box-align: center;
@@ -5561,7 +5572,7 @@ button {
 }
 
 .hamburger.hamburger--sm:hover .hamburger-box .hamburger-inner, .hamburger.hamburger--sm:hover .hamburger-box .hamburger-inner:before, .hamburger.hamburger--sm:hover .hamburger-box .hamburger-inner:after {
-  background-color: #222;
+  background-color: #ffffff;
 }
 
 .hamburger.hamburger--sm .hamburger-box .hamburger-inner, .hamburger.hamburger--sm .hamburger-box .hamburger-inner:before, .hamburger.hamburger--sm .hamburger-box .hamburger-inner:after {
@@ -5596,6 +5607,11 @@ button {
 
 .hamburger.hamburger--sm.is-active .hamburger-inner:after {
   top: 20px;
+}
+
+
+.hamburger-inner,.hamburger-inner:after,.hamburger-inner:before {
+  background-color: #fff;
 }
 
 /* HEADER FIXED */
@@ -5633,7 +5649,7 @@ button {
 }
 
 .menu a:hover {
-  color: #ffffff;
+  color: #00D1FF;
 }
 
 .menu-item {
@@ -5661,7 +5677,7 @@ button {
 }
 
 .menu-mobile {
-  background: #f8f8f8;
+  background: #000000;
 }
 
 .menu-mobile .menu-item {
@@ -5671,7 +5687,6 @@ button {
 .menu-mobile .menu-item a {
   padding: 10px 15px;
   padding-right: 25px;
-  border-bottom: 1px solid #e6e6e6;
   position: relative;
 }
 
@@ -5717,7 +5732,7 @@ button {
   opacity: 1;
   padding: 0;
   min-width: 100%;
-  background: #f8f8f8;
+  background: #000000;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -5729,11 +5744,11 @@ button {
 }
 
 .menu-mobile .sub-menu .menu-item a {
-  color: #222;
+  color: #ffffff;
 }
 
 .menu-mobile .sub-menu .menu-item a:hover {
-  color: #333;
+  color: #00D1FF;
 }
 
 .menu-mobile .sub-menu .menu-item .sub-menu .menu-item a {
@@ -5769,7 +5784,7 @@ button {
 }
 
 .sub-menu .menu-item a:hover {
-  color: #ccc;
+  color: #00D1FF;
 }
 
 .sub-menu .menu-item-has-children > .sub-menu {
@@ -16561,6 +16576,10 @@ button:focus {
    #Maintenance
    ========================================================================== */
 
+  .maintenance-title {
+    text-align: center;
+  } 
+
   .service-filters {
     text-align: center;
   }
@@ -16619,12 +16638,23 @@ button:focus {
 
   .about-bg {
     position:absolute;
-    z-index: 2;
     width:100%;
     height: 100vh;
     margin: 0px;
     padding: 0px;
   } 
+
+  @media (max-width: 991px) {
+    .about-us > section {
+      padding-top: 0;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .about-bg {
+      height: 80%;
+    } 
+  }
   
   p.about-us {
     color:white;
