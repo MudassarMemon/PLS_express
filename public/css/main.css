@@ -19,11 +19,15 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+
+* {
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
 }
 
-html::-webkit-scrollbar { 
+*::-webkit-scrollbar { 
   display: none;  /* Safari and Chrome */
 }
 
@@ -2052,7 +2056,6 @@ a:hover {
 .media-service {
   text-align: center;
   padding: 0 30px;
-  /* margin-bottom: 50px; */
 }
 
 .media-service:hover .media__img {
@@ -4346,7 +4349,7 @@ button {
 .page-line .container {
   height: 100%;
 }
-
+ 
 .page-line.light .page-line__inner {
   opacity: 0.1;
 }
@@ -5172,7 +5175,6 @@ button {
   background-attachment: scroll;
 }
 
-
 #subscribe-message {
   font-size: 36px;
   font-weight: 700;
@@ -5335,6 +5337,8 @@ button {
     text-align: center;
   }
 }
+
+
 
 /* ==========================================================================
    #HEADER
