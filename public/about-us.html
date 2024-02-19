@@ -41,8 +41,7 @@
 
 <body class="animsition js-preloader">
     
-    <div class="page-wrapper">
-        <img src="images/about-bg.jpg" alt="about-bg" class="about-bg">
+    <div class="page-wrapper" id="about-us-bg">
         <!-- HEADER-->
         <header id="header about-us-header">
             <div class="navbar header header-2 d-none d-lg-block">
@@ -271,10 +270,9 @@
         <!-- END HEADER-->
 
         <!-- MAIN-->
-        <main id="main" class="about-us p-t-60 p-b-60">
-
+        <main id="main" class="about-us p-t-60">
             <!-- SERVICE-->
-            <section class="p-t-150 p-b-60">
+            <section class="p-t-150 p-b-30">
                 <div class="container">
                     <div class="about-us-section section-title">
                         <h5 class="title-sub">We are</h5>
@@ -283,7 +281,7 @@
                         <p class="about-us p-b-60">Also, we will beat your two best quotes/service contracts by 10%.</p>
                         <a href="appointment.html"><button class="au-btn au-btn--solid m-b-60" id="send-message">Book your free assessment</button></a>
                         
-                        <div class="row no-gutters">
+                        <div class="row no-gutters experience-badges">
                             <div class="col-md-6 col-lg-4">
                                 <article class="media media-service">
                                     <figure class="media__img">
@@ -309,150 +307,150 @@
                     </div>
             </section>
             <!-- END SERVICE-->
+        </main>
+    </div>
 
-           <!-- FOOTER-->
-            <footer class="footer bg-parallax">
-                <div class="bg-overlay bg-overlay--p85"></div> 
-                <div class="container">
-                    <div class="row footer-pad">
-                        <div class="col-lg-1 col-md-1">
-                            <div class="footer-col">
-                                <div class="widget m-t-10">
-                                    <a href="index.html">
-                                        <img src="images/pls_white_logo.png" alt="pls-mechanical" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <h4 id="subscribe-message">Keep up with the latest in <span>HVAC</span></h4>
-                        </div>
-                        <div class="col-lg-7" >
-                            <div class="row subscribe-form">
-                                <form class="form-subscribe js-subcribe-form" method="POST">
-                
-                                    <div class="form-row no-gutters">
-                                        <div class="col-md">
-                                            <input class="au-input" id="subscribe-inputs" type="text" name="firstName" placeholder="First Name" required="required">
-                                        </div>
-                                        <div class="col-md">
-                                            <input class="au-input" id="subscribe-inputs" type="text" name="lastName" placeholder="Last Name" required="required">
-                                        </div>
-                                        <div class="col-md">
-                                            <input class="au-input" id="subscribe-inputs" type="email" name="email" placeholder="Email Address" required="required" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
-                                        </div>
-                                        <div class="col-md p-r-0">
-                                            <button class="au-btn au-btn--solid" id="subscribe-btn" type="submit">Subscribe</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="row subscribe-button-message">
-                                <h6 id="subscribe-button-message">We promise to keep our communications short and limited</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row footer-nav">
-                        <div class="col-lg-3 col-md-6">
-                            <div class="footer-col p-l-60 p-md-l-0">
-                                <div class="widget widget_pages">
-                                    <h4 class="widget-title">Services</h4>
-                                    <ul>
-                                        <li>
-                                            <a href="heating.html">Heating</a>
-                                        </li>
-                                        <li>
-                                            <a href="cooling.html">Cooling</a>
-                                    </li>
-                                        <li>
-                                            <a href="indoor-air-quality.html">Indoor Air Quality</a>
-                                        </li>
-                                        <li>
-                                            <a href="maintenance.html">Maintenance</a>
-                                        </li>
-                                        <li>
-                                            <a href="commercial.html">Commercial</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="footer-col p-l-20 p-md-l-0">
-                                <div class="widget widget_pages">
-                                    <h4 class="widget-title">Useful Links</h4>
-                                    <ul>
-                                        <li>
-                                            <a href="about-us.html">About us</a>
-                                        </li>
-                                        <li>
-                                            <a href="contact.html">Contact</a>
-                                        </li>
-                                        <li>
-                                            <a href="privacy-policy.html">Privacy Policy</a>
-                                        </li>
-                                        <li>
-                                            <a href="terms-of-service.html">Terms of Service</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="footer-col p-l-0 p-md-l-0">
-                                <div class="widget widget-address">
-                                    <h4 class="widget-title">Contact</h4>
-                                    <ul>
-                                        <li>2300 Marcus Ave, Lake Success, NY 11042</li>
-                                        <li>9AM -6PM Mon - Sat</li>
-                                        <li>+ (516) 697-6100</li>
-                                        <li>info@plsmechanical.com</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="footer-col p-l-10 p-md-l-0">
-                                <h4 class="widget-title">Social</h4>
-                                <div class="widget widget_socials">
-                                    <ul class="list-social list-social-2">
-                                        <li class="list-social__item">
-                                            <a class="ic-fb" target="_blank" href="https://www.facebook.com/plsmechanicalinc">
-                                                <i class="zmdi zmdi-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-social__item">
-                                            <a class="ic-insta" target="_blank" href="https://www.instagram.com/plsmechanical/">
-                                                <i class="zmdi zmdi-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-social__item">
-                                            <a class="ic-twi" target="_blank" href="https://twitter.com/PLSMechanical">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                                                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-                                                    </svg>
-                                            </a>
-                                        </li>
-                                        <li class="list-social__item">
-                                            <a class="ic-youtube" target="_blank" href="https://www.youtube.com/channel/UC1il56Zf79YmRoEidSQl24A">
-                                                <i class="zmdi zmdi-youtube-play"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-social__item">
-                                            <a class="ic-linkedin" target="_blank" href="https://www.linkedin.com/company/pls-mechanical-inc/">
-                                                <i class="zmdi zmdi-linkedin"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+    <!-- FOOTER-->
+    <footer class="footer bg-parallax">
+        <div class="bg-overlay bg-overlay--p85"></div> 
+        <div class="container">
+            <div class="row footer-pad">
+                <div class="col-lg-1 col-md-1">
+                    <div class="footer-col">
+                        <div class="widget m-t-10">
+                            <a href="index.html">
+                                <img src="images/pls_white_logo.png" alt="pls-mechanical" />
+                            </a>
                         </div>
                     </div>
                 </div>
-            </footer>
-            <!-- END FOOTER-->
-        </main>
-    </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 id="subscribe-message">Keep up with the latest in <span>HVAC</span></h4>
+                </div>
+                <div class="col-lg-7" >
+                    <div class="row subscribe-form">
+                        <form class="form-subscribe js-subcribe-form" method="POST">
+        
+                            <div class="form-row no-gutters">
+                                <div class="col-md">
+                                    <input class="au-input" id="subscribe-inputs" type="text" name="firstName" placeholder="First Name" required="required">
+                                </div>
+                                <div class="col-md">
+                                    <input class="au-input" id="subscribe-inputs" type="text" name="lastName" placeholder="Last Name" required="required">
+                                </div>
+                                <div class="col-md">
+                                    <input class="au-input" id="subscribe-inputs" type="email" name="email" placeholder="Email Address" required="required" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+                                </div>
+                                <div class="col-md p-r-0">
+                                    <button class="au-btn au-btn--solid" id="subscribe-btn" type="submit">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row subscribe-button-message">
+                        <h6 id="subscribe-button-message">We promise to keep our communications short and limited</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer-nav">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-col p-l-60 p-md-l-0">
+                        <div class="widget widget_pages">
+                            <h4 class="widget-title">Services</h4>
+                            <ul>
+                                <li>
+                                    <a href="heating.html">Heating</a>
+                                </li>
+                                <li>
+                                    <a href="cooling.html">Cooling</a>
+                            </li>
+                                <li>
+                                    <a href="indoor-air-quality.html">Indoor Air Quality</a>
+                                </li>
+                                <li>
+                                    <a href="maintenance.html">Maintenance</a>
+                                </li>
+                                <li>
+                                    <a href="commercial.html">Commercial</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-col p-l-20 p-md-l-0">
+                        <div class="widget widget_pages">
+                            <h4 class="widget-title">Useful Links</h4>
+                            <ul>
+                                <li>
+                                    <a href="about-us.html">About us</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="privacy-policy.html">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="terms-of-service.html">Terms of Service</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-col p-l-0 p-md-l-0">
+                        <div class="widget widget-address">
+                            <h4 class="widget-title">Contact</h4>
+                            <ul>
+                                <li>2300 Marcus Ave, Lake Success, NY 11042</li>
+                                <li>9AM -6PM Mon - Sat</li>
+                                <li>+ (516) 697-6100</li>
+                                <li>info@plsmechanical.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-col p-l-10 p-md-l-0">
+                        <h4 class="widget-title">Social</h4>
+                        <div class="widget widget_socials">
+                            <ul class="list-social list-social-2">
+                                <li class="list-social__item">
+                                    <a class="ic-fb" target="_blank" href="https://www.facebook.com/plsmechanicalinc">
+                                        <i class="zmdi zmdi-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="list-social__item">
+                                    <a class="ic-insta" target="_blank" href="https://www.instagram.com/plsmechanical/">
+                                        <i class="zmdi zmdi-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="list-social__item">
+                                    <a class="ic-twi" target="_blank" href="https://twitter.com/PLSMechanical">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                            </svg>
+                                    </a>
+                                </li>
+                                <li class="list-social__item">
+                                    <a class="ic-youtube" target="_blank" href="https://www.youtube.com/channel/UC1il56Zf79YmRoEidSQl24A">
+                                        <i class="zmdi zmdi-youtube-play"></i>
+                                    </a>
+                                </li>
+                                <li class="list-social__item">
+                                    <a class="ic-linkedin" target="_blank" href="https://www.linkedin.com/company/pls-mechanical-inc/">
+                                        <i class="zmdi zmdi-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER-->
 
     <!-- Jquery JS-->
     <script src="vendor/jquery/jquery.min.js"></script>
