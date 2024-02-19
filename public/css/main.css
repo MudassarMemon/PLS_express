@@ -672,6 +672,7 @@ a:hover {
 /* ==========================================================================
    #LIST SOCIAL
    ========================================================================== */
+
 .list-social__item {
   display: inline-block;
 }
@@ -5648,6 +5649,11 @@ button {
 
 .hamburger-inner,.hamburger-inner:after,.hamburger-inner:before {
   background-color: #fff;
+}
+
+#about-us-mobile-menu{
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 /* HEADER FIXED */
