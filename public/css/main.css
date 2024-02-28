@@ -6383,6 +6383,12 @@ button {
   }
 }
 
+@media (max-width: 1500px) {
+  .pp-scrollable {
+    padding: 0, auto;
+}
+}
+
 #pp-nav.right {
   right: 78px;
 }
@@ -17161,4 +17167,6 @@ select.appt {
  input#free-assessment{
   transform: scale(2);
  }
+
 }
+

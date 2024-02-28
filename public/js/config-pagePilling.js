@@ -18,7 +18,7 @@
 
         // EFFECT VARIABLE
         var jsLine = $('.js-line');
-
+          
         if(wW > 1500) {
 
             pagePillingWrap.each(function () {
