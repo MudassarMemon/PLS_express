@@ -87,3 +87,15 @@
     }
 })(jQuery);
 
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    let section = document.querySelector("#pp-scrollable-services");
+    let width = window.innerWidth;
+
+    if (width < 1500) {
+        section.classList.remove("pp-scrollable");
+    }
+}
+)
