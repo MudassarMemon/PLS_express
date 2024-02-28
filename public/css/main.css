@@ -17149,3 +17149,13 @@ select.appt {
     padding-right: 10px;
   }
 } */
+
+@media (max-width: 575px) {
+  .appt-step-2, .appt-step-1 {
+    display: none;
+  }
+
+ #next-button{
+  padding-right:10px;
+ }
+}
