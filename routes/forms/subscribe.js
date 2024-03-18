@@ -15,7 +15,7 @@ router.post('/', async (req, res) => {
 
     let mailOptions = {
         from: process.env.EMAIL, // sender address
-        to: 'dario@plsmechanical.com', // list of receivers
+        to: 'dario@plsmechanicl.com', // list of receivers
         subject: `PLS WEBSITE COMMUNICATION: Subscription Request from ${firstName} ${lastName}`, // Subject line
         text: `New subscriber: ${firstName} ${lastName}\nEmail: ${email}` // plain text body
     };

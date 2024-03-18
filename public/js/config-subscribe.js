@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     e.preventDefault();
     let formData = new FormData(this);
     subscribeButton.innerHTML = "Subscribed!"
-
+    subscribeButton.disabled = true;
+    
     fetch('/subscribe', {
         method: 'POST',
         headers: {

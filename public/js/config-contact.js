@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-    let subscribeButton = document.querySelector('#send-message')
+    let contactButton = document.querySelector('#send-message')
 
     document.querySelector('.js-contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
     let formData = new FormData(this);
-    subscribeButton.innerHTML = "Message Sent!"
+    contactButton.innerHTML = "Message Sent!"
+    contactButton.disabled = true;
 
     fetch('/contact', {
         method: 'POST',
